@@ -1,0 +1,7 @@
+name: qmcc
+title: QMCC
+version: 1.0
+prerelease: -beta.1
+nav:
+  - modules/qmcc/nav.adoc
+  - modules/update-qmcc/nav.adoc
