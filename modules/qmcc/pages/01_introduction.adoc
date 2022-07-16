@@ -44,3 +44,4 @@ Legend: R = Required, O = Optional.
 |IT     |Would like the system to require as little maintenance as possible and to integrate into the existing system landscape with as little effort as possible.  |Has no interest in the architecture of the sytstem, just wants the interfaces of the system to other systems (database server, web server, file locations, etc.) to be changeable with as little effort as possible.
 |New Developers |Would like to extend the QMCC with own functions and functionality.    |Would like to find his way around the system as quickly as possible. The architecture should be clear, understandable and well documented.
 |===
+
