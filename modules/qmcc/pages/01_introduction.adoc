@@ -1,0 +1,46 @@
+= Introduction & Goals
+
+== Requirements
+
+The QMCC is designed to help process Quality Notifications more quickly and effectively. For this it should import all new Quality Notifications from SAP on a daily basis and give the possibility to extend them with further information. The Quality Notifications should be evaluated and a time history should be visualized.
+
+The core procedure is as follow:
+
+. A service technician identifies a defect and creates a Quality Notification in SAP.*
+. The Qaulity Notiifcations are automatically exported from SAP to a CSV-File on a daily basis.*
+. The CSV file is read out every working day and imported into a database.
+. The new Quality Notifications are displayed clearly and the QM can expand them with further information.
+. The data is visualiyed and presented in a dashboard.
+
+{empty}* This is not part of the QMCC and is managed by others.
+
+[cols="1,4,8"]
+|===
+|ID     |Requirement        |Explanation
+|R-1    |Import CSV file.   |Import the Quality Notifications from a CSV file automatically every working day. The import should also be able to be started manually at any time via the QMCC.
+|R-2    |Create a daily overview |Give a short overview of all important information for this day (e.g. new QNs, open PDCAs, etc.).
+|R-3    |Create alist of all QNs    |The list should be freely sortable and filterable.
+|R-4    |Link to other QM Tools |All digital QM tasks should be done or at least reached via the QMCC.
+|===
+
+Legend: R = Required, O = Optional.
+
+== Quality Goals
+
+[cols="1,1,2,4"]
+|===
+|ID     |Priority   |Quality Goal   |Explanation
+|Q-1    |1          |Security       |The content of the QNs is never changed (only extended). QNs cannot be deleted.
+|Q-2    |2          |Availability   |The QMCC is used daily and should be available at any time.
+|Q-3    |3          |Performance    |The loading time of a view should never be longer that 2 seconds. Creating PDFs or Excel files should never take longer than 5 seconds.
+|===
+
+== Stakeholder
+
+[cols="1,2,2"]
+|===
+|Role   |Goal    |Expectations
+|QM     |Would like a daily overview of the QNs. Want the daily work with QNs to be facilitated and all automatable processes to be automated.  |Has no interest in the architecture of the system, only in the produced overviews and reports.
+|IT     |Would like the system to require as little maintenance as possible and to integrate into the existing system landscape with as little effort as possible.  |Has no interest in the architecture of the sytstem, just wants the interfaces of the system to other systems (database server, web server, file locations, etc.) to be changeable with as little effort as possible.
+|New Developers |Would like to extend the QMCC with own functions and functionality.    |Would like to find his way around the system as quickly as possible. The architecture should be clear, understandable and well documented.
+|===
