@@ -1,0 +1,12 @@
+= Constraints
+
+[cols="1,1"]
+|===
+|ID     |Description
+|C-1    |The QMCC must be developed in ASP.NET Core and C#
+|C-2    |Code and documentation must be managed in Git.
+|C-3    |Bugs and new requirements should be maintained with an issue tracker.
+|C-4    |Only open source tools may be used, or tools for which MTA already has a license.
+|C-5    |A beta version must run reliably until the QM audit. Version 1.0 will be presented at the Quality Day. 
+|C-6    |The QMCC should be displayed correctly on different screen resolutions.
+|===
